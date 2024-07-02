@@ -1,0 +1,41 @@
+.navbar {
+  .flex {
+    display: flex;
+  }
+
+  .small-row {
+    padding: 0 40px;
+    background-color: #F5F5D4;
+    color: green;
+    height: 54px;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-part {
+      display: flex;
+      column-gap: 24px;
+    }
+  }
+
+  .large-row {
+    padding: 0 40px;
+    height: 75px;
+    color: yellowgreen;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      height: inherit;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .nav-items {
+      display: flex;
+      column-gap: 24px;
+    }
+  }
+}

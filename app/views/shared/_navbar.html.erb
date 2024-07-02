@@ -1,0 +1,30 @@
+<div class="navbar">
+  <div class="flex small-row">
+    <div class="left-part">
+      <small> Gala Mandi Daska, Sialkot</small>
+      
+      <small>Mon - Sat : 08.00 AM - 10.00 PM</small>
+    </div>
+
+    <div>
+      <small>+92 300 9471211</small>
+    </div>
+  </div>
+
+  <div class="flex large-row">
+    <div class="logo">
+      <%= image_tag "meezan-logo.png" %>
+    </div>
+
+    <div class="nav-items">
+      <%= link_to 'Sign in', new_user_session_path %>
+
+      <%= link_to 'Sign out', destroy_user_session_path, method: :delete, data: {turbo_method: :delete}  %>
+
+      <div class="nav-item">HOME</div>
+      <div class="nav-item">ABOUT</div> 
+      <div class="nav-item">SERVICES</div> 
+      <div class="nav-item">CONTACT</div> 
+    </div>
+  </div>
+</div>
