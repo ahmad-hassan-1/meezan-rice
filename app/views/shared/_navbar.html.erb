@@ -17,9 +17,13 @@
     </div>
 
     <div class="nav-items">
-      <%= link_to 'Sign in', new_user_session_path %>
+      <%
+=begin%>
+ <%= link_to 'Sign in', new_user_session_path %>
 
-      <%= link_to 'Sign out', destroy_user_session_path, method: :delete, data: {turbo_method: :delete}  %>
+      <%= link_to 'Sign out', destroy_user_session_path, method: :delete, data: {turbo_method: :delete}  %> 
+<%
+=end%>
 
       <div class="nav-item">HOME</div>
       <div class="nav-item">ABOUT</div> 
